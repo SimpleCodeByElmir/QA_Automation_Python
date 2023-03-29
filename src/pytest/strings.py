@@ -5,10 +5,9 @@ def sum_str(a,b):
 
 def regex_str(a):
   res = re.search(r'abc', a)
-  if res == None:
-    return res
-  else:
-    return "found"
+  if res != None:
+    res = "found"
+  return res
 
 def test_sum_str():
   assert(sum_str("abc","def")) == "abcdef"
