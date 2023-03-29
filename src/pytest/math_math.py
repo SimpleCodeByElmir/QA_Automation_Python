@@ -1,6 +1,3 @@
-##### FROM EASY TO HARD #####
-
-### Math Operations
 def my_mult(a,b):
   return a*b
 def my_div(a,b):
