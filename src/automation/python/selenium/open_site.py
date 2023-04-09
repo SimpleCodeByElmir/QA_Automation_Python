@@ -10,5 +10,5 @@ browser.get(link)
 
 search = browser.find_element(By.XPATH, "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input")
 search.send_keys("Globe")
-time.sleep (1)               # I know it's a bad thing to do. But this is just for a quick test
+time.sleep (3)               # I know it's a bad thing to do. But this is just for a quick test
 search.send_keys(Keys.ENTER)

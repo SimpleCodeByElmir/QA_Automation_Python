@@ -1,0 +1,26 @@
+###################### XPATH  ##############
+//div[@class="name")../../../following-sibling/span[@class="name]
+//*[contains(text(),'Java')]
+
+
+
+
+
+############# CSS locators find in console ################
+$$("body")
+$$("#id")
+$$(".dodTbe")       //find element (here by class name)
+$$("[role='main']")    // find any element with this atribute
+$$("[role]")           // find all elements containing atribute "role" 
+$$("div[role='main']")    // look for in '//div'
+$$("div[role*='ai']")        // look for all elements containing 'ai'
+$$("div[role^='ai']")        // look for all elements containing 'ai' in beginning of a word 
+$$("div[role$='ai']")        // look for all elements containing 'ai' in the end of a word
+$$(".one.two.three")           // find element that contains three classes (class="one two three")
+$$("div:not(.col)")          // find all elements that DON't contain "col" class
+$$("a:not(href^='http')")         // find all elements of type "ahref"(link) that DON't start by 'http'
+$$("div[jsmodel=' ROaKxe'] div.dodTBe")        // find div(class="dodTBe") in div(jsmodel=' ROaKxe') **doesn't matter how much "in" element in first div
+$$("div[jsmodel=' ROaKxe'] > div.dodTBe")        // find div(class="dodTBe") in div(jsmodel=' ROaKxe') *parent > child (only this path)
+$$("ul[class='i8Z77e']>li:first-child")         // find ul > list and its first element
+$$("ul[class='i8Z77e']>li:nth-child(2)")         // find ul > list and its nth(here is the second) element
+$$("ul[class='i8Z77e']>li:last-child")           // find ul > list and its last element
